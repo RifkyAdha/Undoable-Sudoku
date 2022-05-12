@@ -10,9 +10,9 @@ public:
 	Board();
 	void GenerateNumber();
 	void PrintBoard();
-	void CekRegion();
-	void CekRow();
-	void CekColumn();
+	bool CekRegion();
+	bool CekRow();
+	bool CekColumn();
 	void Delete(int, int);
 	void Fill(int, int, int);
 };

@@ -11,27 +11,27 @@ using namespace std;
 class GameManager
 {
 protected:
-	Board board;
-	Player player;
-	Invoker undo;
-	Invoker redo;
+	Board *board;
+	Player *player;
+	Invoker Undo;
+	Invoker Redo;
 
 public:
 	GameManager();
 	void Initialize();
-	void Pause();
+	int Pause();
 	void Play();
-	void Quit();
-	void CheckWin();
+	bool Quit();
+	bool CheckWin();
 	void SendToDatabase();
-	void SetBoard(Board);
+	void SetBoard(Board*);
 	void DeleteCell(int, int);
 	void FillCell(int, int, int);
-	void redo();
+	void redo(); 
 	void undo();
-	Player getPlayer();
-	void setPlayer(Player);
-	Board getBoard();
+	Player* getPlayer();
+	void setPlayer(Player*);
+	Board* getBoard();
 
 };
 

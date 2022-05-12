@@ -11,7 +11,7 @@ int main()
 	}
 	else
 	{
-		cout << "Game Over " << endl;
+		cout << "GAME OVER! " << endl;
 	}
 
 	return 0;
